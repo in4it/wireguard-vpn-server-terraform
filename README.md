@@ -13,7 +13,7 @@ Make sure to subscribe first to the Marketplace product at [https://aws.amazon.c
 
 ```
 module "vpn-server" {
-	source             = "https://github.com/in4it/wireguard-vpn-server-terraform"
+	source             = "github.com/in4it/wireguard-vpn-server-terraform"
 	instance_type      = "t3.small"
 	vpc_id             = module.vpc.vpc_id
 	instance_subnet_id = module.vpc.public_subnets[0]
